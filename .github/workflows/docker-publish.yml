@@ -36,11 +36,6 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/astrophoenix/skills-publish-docker-images/stackoverflown
-      - name: Extract metadata for Docker
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ghcr.io/astrophoenix/skills-publish-docker-images/stackoverflown
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
